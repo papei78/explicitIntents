@@ -45,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE,message);
-        startActivity(intent);
+       // startActivity(intent);
+        startActivityForResult(intent, TEXT_REQUEST);
+
 
 
     }
